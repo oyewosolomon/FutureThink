@@ -57,8 +57,33 @@ const Navbar: React.FC = () => {
       <div className="container mx-auto px-6">
         <div className="flex items-center justify-between">
           <a href="#" className="flex items-center space-x-2">
-            <div className="w-10 h-10 rounded-lg bg-gradient-to-r from-blue-500 to-violet-500"></div>
-            <span className="text-xl font-bold text-white">FutureThink</span>
+            {/* <div className="w-10 h-10 rounded-lg bg-gradient-to-r from-blue-500 to-violet-500"></div> */}
+            <svg 
+  width="40px" 
+  height="40px" 
+  viewBox="0 0 24 24" 
+  xmlns="http://www.w3.org/2000/svg" 
+  fill="#ffffff" 
+  stroke="#ffffff"
+>
+  <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
+  <g id="SVGRepo_tracerCarrier" strokeLinecap="round" strokeLinejoin="round"></g>
+  <g id="SVGRepo_iconCarrier">
+    <polygon 
+      points="20.39 18.24 20.39 8 11.52 2.89 11.52 7.55 16.37 10.32 16.35 15.91 20.39 18.24" 
+      style={{fill: '#fffffffffff'}}
+    ></polygon>
+    <polygon 
+      points="14.79 19.86 14.79 11.23 7.33 6.92 7.33 10.94 11.34 13.23 11.32 17.85 14.79 19.86" 
+      style={{fill: '#ffffff'}}
+    ></polygon>
+    <polygon 
+      points="9.76 21.15 9.76 14.14 3.69 10.64 3.69 14 6.86 15.81 6.84 19.47 9.76 21.15" 
+      style={{fill: '#ffffff'}}
+    ></polygon>
+  </g>
+</svg>
+<span className="text-xl font-bold text-white">FutureThink</span>
           </a>
           <div className="hidden lg:flex items-center space-x-8">
             <div className="flex items-center space-x-8">

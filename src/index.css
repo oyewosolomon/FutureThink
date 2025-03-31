@@ -24,6 +24,8 @@
     --input: 214.3 31.8% 91.4%;
     --ring: 222 89% 51%;
     --radius: 0.75rem;
+    --font-arapey: 'Arapey', serif;
+    --font-sans: 'ui-sans-serif', system-ui, sans-serif;
   }
 
   .dark {
@@ -46,10 +48,41 @@
     --border: 217.2 32.6% 17.5%;
     --input: 217.2 32.6% 17.5%;
     --ring: 224.3 76.3% 48%;
+    --font-arapey: 'Arapey', serif;
+    --font-sans: 'ui-sans-serif', system-ui, sans-serif;
   }
 
   * {
     @apply border-border;
+  }
+
+  /* Apply Arapey to headings */
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-arapey);
+    @apply font-normal; /* Arapey only has regular weight */
+    letter-spacing: 0.01em;
+    line-height: 1.2;
+  }
+
+  /* Body text remains system sans */
+  body {
+    font-family: var(--font-sans);
+    @apply font-normal;
+  }
+
+  /* Italic styles */
+  em, i, blockquote {
+    font-family: var(--font-arapey);
+    font-style: italic;
+  }
+
+  /* Utility classes */
+  .font-arapey {
+    font-family: var(--font-arapey);
+  }
+  .font-arapey-italic {
+    font-family: var(--font-arapey);
+    font-style: italic;
   }
   body {
     @apply bg-background text-foreground;
